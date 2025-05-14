@@ -10,7 +10,16 @@ const related = new Swiper('.home-courses-related-main.swiper', {
     slidesPerView: 3,
     spaceBetween: 30,
 })
-
+var testimonials = new Swiper('.aurora-testimonials-main', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+    });
 const languages = document.querySelectorAll('.footer-language');
 
 languages.forEach(lang => {
@@ -21,9 +30,9 @@ languages.forEach(lang => {
 });
 const column = document.querySelectorAll('.footer-column-txt');
 
-languages.forEach(lang => {
+column.forEach(lang => {
   lang.addEventListener('click', () => {
-    languages.forEach(l => l.classList.remove('active'));
+    column.forEach(l => l.classList.remove('active'));
     lang.classList.add('active');
   });
 });
