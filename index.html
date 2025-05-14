@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autotatalk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
@@ -35,8 +36,10 @@
                 <div class="home-hero-content">
                     <h1 class="txt-h1">Reveal greatest career lessons from inspiring stories</h1>
                 </div>
-                <div class="home-hero-picture">
-                    <img src="./imgs/hero-image.png" alt="" class="img-hero-image">
+                <div class="home-hero-video">
+                    <video class="hero-video" autoplay muted loop playsinline>
+                        <source src="./imgs/hero-video.mp4" type="video/mp4" class="img-hero-video">
+                    </video>
                 </div>
                 <div class="home-hero-partners">
                     <img src="./imgs/partners-business-insider.png" alt="business insider partners"
@@ -69,46 +72,50 @@
                 </div>
                 <div class="home-experts-vector">
                     <div class="grid">
-                        <div class="arrow left-arrow">
-                            <img src="imgs/arrow.png" alt="arrow left" class="img-arrow">
-                        </div>
-                        <div class="arrow right-arrow">
-                            <img src="imgs/arrow.png" alt="arrow right" class="img-arrow right">
+                        <div class="experts-vector-arrow">
+                            <div class="arrow left-arrow">
+                                <img src="imgs/arrow.png" alt="arrow left" class="img-arrow">
+                            </div>
+                            <div class="arrow right-arrow">
+                                <img src="imgs/arrow.png" alt="arrow right" class="img-arrow right">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="home-experts-showcase">
                     <div class="grid">
-                        <div class="home-experts-showcase-full">
-                            <div class="home-experts-showcase-chance">
-                                <img src="./imgs/speakers-chance.png" alt="speakers Chance" class="img-speakers">
-                                <p class="speaker-name">Chance Franci</p>
-                                <p class="txt-h4">Music Speakers</p>
-                            </div>
-                            <div class="home-experts-showcase-corey">
-                                <img src="./imgs/speakers-corey.png" alt="speakers Corey" class="img-speakers">
-                                <p class="speaker-name">Corey Lubin</p>
-                                <p class="txt-h4">Fintech Speaker</p>
-                            </div>
-                            <div class="home-experts-showcase-jane">
-                                <img src="./imgs/speakers-jane.png" alt="speakers Jane" class="img-speakers">
-                                <p class="speaker-name">Jane Tindermans</p>
-                                <p class="txt-h4">Music Speaker</p>
-                            </div>
-                            <div class="home-experts-showcase-chance">
-                                <img src="./imgs/speakers-chance.png" alt="speakers Chance" class="img-speakers">
-                                <p class="speaker-name">Chance Franci</p>
-                                <p class="txt-h4">Music Speakers</p>
-                            </div>
-                            <div class="home-experts-showcase-corey">
-                                <img src="./imgs/speakers-corey.png" alt="speakers Corey" class="img-speakers">
-                                <p class="speaker-name">Corey Lubin</p>
-                                <p class="txt-h4">Fintech Speaker</p>
-                            </div>
-                            <div class="home-experts-showcase-jane">
-                                <img src="./imgs/speakers-jane.png" alt="speakers Jane" class="img-speakers">
-                                <p class="speaker-name">Jane Tindermans</p>
-                                <p class="txt-h4">Music Speaker</p>
+                        <div class="home-experts-showcase-main swiper">
+                            <div class="home-experts-showcase-full swiper-wrapper">
+                                <div class="home-experts-showcase-chance swiper-slide">
+                                    <img src="./imgs/speakers-chance.png" alt="speakers Chance" class="img-speakers">
+                                    <p class="speaker-name">Chance Franci</p>
+                                    <p class="txt-h4">Music Speakers</p>
+                                </div>
+                                <div class="home-experts-showcase-corey swiper-slide">
+                                    <img src="./imgs/speakers-corey.png" alt="speakers Corey" class="img-speakers">
+                                    <p class="speaker-name">Corey Lubin</p>
+                                    <p class="txt-h4">Fintech Speaker</p>
+                                </div>
+                                <div class="home-experts-showcase-jane swiper-slide">
+                                    <img src="./imgs/speakers-jane.png" alt="speakers Jane" class="img-speakers">
+                                    <p class="speaker-name">Jane Tindermans</p>
+                                    <p class="txt-h4">Music Speaker</p>
+                                </div>
+                                <div class="home-experts-showcase-chance swiper-slide">
+                                    <img src="./imgs/speakers-chance.png" alt="speakers Chance" class="img-speakers">
+                                    <p class="speaker-name">Chance Franci</p>
+                                    <p class="txt-h4">Music Speakers</p>
+                                </div>
+                                <div class="home-experts-showcase-corey swiper-slide">
+                                    <img src="./imgs/speakers-corey.png" alt="speakers Corey" class="img-speakers">
+                                    <p class="speaker-name">Corey Lubin</p>
+                                    <p class="txt-h4">Fintech Speaker</p>
+                                </div>
+                                <div class="home-experts-showcase-jane swiper-slide">
+                                    <img src="./imgs/speakers-jane.png" alt="speakers Jane" class="img-speakers">
+                                    <p class="speaker-name">Jane Tindermans</p>
+                                    <p class="txt-h4">Music Speaker</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,146 +167,160 @@
                 <div class="home-courses-related">
                     <div class="grid">
                         <div class="home-courses-related-content">Related Courses</div>
-                        <div class="home-courses-related-card">
-                            <img src="./imgs/related-img-1.png" alt="" class="img-related">
-                            <div class="home-courses-related-card-details">
-                                <p class="related-card-category">DESIGN</p>
-                                <p>
-                                    The Complete Sketchup & Vray Course for
-                                    Professional Interior Design.
-                                </p>
-                                <div class="related-card-intro">
-                                    <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
-                                    <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                        <div class="home-courses-related-main swiper">
+                            <div class="home-courses-related-all swiper-wrapper">
+                                <div class="home-courses-related-card swiper-slide">
+                                    <div class="home-courses-related-card-img">
+                                        <img src="./imgs/related-img-1.png" alt="" class="img-related">
+                                    </div>
+                                    <div class="home-courses-related-card-details">
+                                        <p class="related-card-category">DESIGN</p>
+                                        <p>
+                                            The Complete Sketchup & Vray Course for
+                                            Professional Interior Design.
+                                        </p>
+                                        <div class="related-card-intro">
+                                            <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
+                                            <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                                        </div>
+                                    </div>
+                                    <div class="home-courses-related-action-buttons">
+                                        <button class="action-buttons buy-now">BUY NOW</button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
+                                        </button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-share.png" alt="" class="img-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="home-courses-related-card swiper-slide two">
+                                    <div class="home-courses-related-card-img">
+                                        <img src="./imgs/related-img-2.png" alt="" class="img-related">
+                                    </div>
+                                    <div class="home-courses-related-card-details">
+                                        <p class="related-card-category">DESIGN</p>
+                                        <p>
+                                            The Complete Sketchup & Vray Course for
+                                            Professional Interior Design.
+                                        </p>
+                                        <div class="related-card-intro">
+                                            <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
+                                            <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                                        </div>
+                                    </div>
+                                    <div class="home-courses-related-action-buttons">
+                                        <button class="action-buttons buy-now">BUY NOW</button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
+                                        </button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-share.png" alt="" class="img-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="home-courses-related-card swiper-slide three">
+                                    <div class="home-courses-related-card-img">
+                                        <img src="./imgs/related-img-3.png" alt="" class="img-related">
+                                    </div>
+                                    <div class="home-courses-related-card-details">
+                                        <p class="related-card-category">DESIGN</p>
+                                        <p>
+                                            The Complete Sketchup & Vray Course for
+                                            Professional Interior Design.
+                                        </p>
+                                        <div class="related-card-intro">
+                                            <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
+                                            <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                                        </div>
+                                    </div>
+                                    <div class="home-courses-related-action-buttons">
+                                        <button class="action-buttons buy-now">BUY NOW</button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
+                                        </button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-share.png" alt="" class="img-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="home-courses-related-card swiper-slide">
+                                    <div class="home-courses-related-card-img">
+                                        <img src="./imgs/related-img-4.png" alt="" class="img-related">
+                                    </div>
+                                    <div class="home-courses-related-card-details">
+                                        <p class="related-card-category">DESIGN</p>
+                                        <p>
+                                            The Complete Sketchup & Vray Course for
+                                            Professional Interior Design.
+                                        </p>
+                                        <div class="related-card-intro">
+                                            <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
+                                            <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                                        </div>
+                                    </div>
+                                    <div class="home-courses-related-action-buttons">
+                                        <button class="action-buttons buy-now">BUY NOW</button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
+                                        </button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-share.png" alt="" class="img-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="home-courses-related-card swiper-slide two">
+                                    <div class="home-courses-related-card-img">
+                                        <img src="./imgs/related-img-5.png" alt="" class="img-related">
+                                    </div>
+                                    <div class="home-courses-related-card-details">
+                                        <p class="related-card-category">DESIGN</p>
+                                        <p>
+                                            The Complete Sketchup & Vray Course for
+                                            Professional Interior Design.
+                                        </p>
+                                        <div class="related-card-intro">
+                                            <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
+                                            <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                                        </div>
+                                    </div>
+                                    <div class="home-courses-related-action-buttons">
+                                        <button class="action-buttons buy-now">BUY NOW</button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
+                                        </button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-share.png" alt="" class="img-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="home-courses-related-card swiper-slide three">
+                                    <div class="home-courses-related-card-img">
+                                        <img src="./imgs/related-img-6.png" alt="" class="img-related">
+                                    </div>
+                                    <div class="home-courses-related-card-details">
+                                        <p class="related-card-category">DESIGN</p>
+                                        <p>
+                                            The Complete Sketchup & Vray Course for
+                                            Professional Interior Design.
+                                        </p>
+                                        <div class="related-card-intro">
+                                            <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
+                                            <p class="txt-h4 related-card-intro-name">Chance Franci</p>
+                                        </div>
+                                    </div>
+                                    <div class="home-courses-related-action-buttons">
+                                        <button class="action-buttons buy-now">BUY NOW</button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
+                                        </button>
+                                        <button class="action-buttons icon-button">
+                                            <img src="./imgs/related-share.png" alt="" class="img-icon">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="home-courses-related-action-buttons">
-                                <button class="buy-now">BUY NOW</button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
-                                </button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-share.png" alt="" class="img-icon">
-                                </button>
-                            </div>
                         </div>
-                        <div class="home-courses-related-card two">
-                            <img src="./imgs/related-img-2.png" alt="" class="img-related">
-                            <div class="home-courses-related-card-details">
-                                <p class="related-card-category">DESIGN</p>
-                                <p>
-                                    The Complete Sketchup & Vray Course for
-                                    Professional Interior Design.
-                                </p>
-                                <div class="related-card-intro">
-                                    <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
-                                    <p class="txt-h4 related-card-intro-name">Chance Franci</p>
-                                </div>
-                            </div>
-                            <div class="home-courses-related-action-buttons">
-                                <button class="buy-now">BUY NOW</button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
-                                </button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-share.png" alt="" class="img-icon">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="home-courses-related-card three">
-                            <img src="./imgs/related-img-3.png" alt="" class="img-related">
-                            <div class="home-courses-related-card-details">
-                                <p class="related-card-category">DESIGN</p>
-                                <p>
-                                    The Complete Sketchup & Vray Course for
-                                    Professional Interior Design.
-                                </p>
-                                <div class="related-card-intro">
-                                    <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
-                                    <p class="txt-h4 related-card-intro-name">Chance Franci</p>
-                                </div>
-                            </div>
-                            <div class="home-courses-related-action-buttons">
-                                <button class="buy-now">BUY NOW</button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
-                                </button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-share.png" alt="" class="img-icon">
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Cần update -->
-                        <div class="home-courses-related-card">
-                            <img src="./imgs/related-img-4.png" alt="" class="img-related">
-                            <div class="home-courses-related-card-details">
-                                <p class="related-card-category">DESIGN</p>
-                                <p>
-                                    The Complete Sketchup & Vray Course for
-                                    Professional Interior Design.
-                                </p>
-                                <div class="related-card-intro">
-                                    <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
-                                    <p class="txt-h4 related-card-intro-name">Chance Franci</p>
-                                </div>
-                            </div>
-                            <div class="home-courses-related-action-buttons">
-                                <button class="buy-now">BUY NOW</button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
-                                </button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-share.png" alt="" class="img-icon">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="home-courses-related-card two">
-                            <img src="./imgs/related-img-5.png" alt="" class="img-related">
-                            <div class="home-courses-related-card-details">
-                                <p class="related-card-category">DESIGN</p>
-                                <p>
-                                    The Complete Sketchup & Vray Course for
-                                    Professional Interior Design.
-                                </p>
-                                <div class="related-card-intro">
-                                    <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
-                                    <p class="txt-h4 related-card-intro-name">Chance Franci</p>
-                                </div>
-                            </div>
-                            <div class="home-courses-related-action-buttons">
-                                <button class="buy-now">BUY NOW</button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
-                                </button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-share.png" alt="" class="img-icon">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="home-courses-related-card three">
-                            <img src="./imgs/related-img-6.png" alt="" class="img-related">
-                            <div class="home-courses-related-card-details">
-                                <p class="related-card-category">DESIGN</p>
-                                <p>
-                                    The Complete Sketchup & Vray Course for
-                                    Professional Interior Design.
-                                </p>
-                                <div class="related-card-intro">
-                                    <img src="./imgs/related-avatar.png" alt="" class="img-related-avatar">
-                                    <p class="txt-h4 related-card-intro-name">Chance Franci</p>
-                                </div>
-                            </div>
-                            <div class="home-courses-related-action-buttons">
-                                <button class="buy-now">BUY NOW</button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-shopping-bag.png" alt="" class="img-icon">
-                                </button>
-                                <button class="icon-button">
-                                    <img src="./imgs/related-share.png" alt="" class="img-icon">
-                                </button>
-                            </div>
-                        </div>
-
                         <div class="home-courses-related-view-all">
                             <button class="related-view-all-button">View All Course</button>
                         </div>
@@ -446,60 +467,67 @@
                 <div class="home-aurora-footer">
                     <div class="grid">
                         <div class="aurora-footer-logo">
-                            <img src="" alt="">
+                            <img src="./imgs/logo.png" alt="" class="img-footer-logo">
                             <div class="footer-logo-dash"></div>
                         </div>
                         <div class="aurora-footer-info">
                             <div class="footer-info-office">
-                                <p>Head Office</p>
+                                <p class="txt-h5">Head Office</p>
                                 <p>590 CMT8, Ward 11, District 3, Ho Chi Minh City, Vietnam</p>
                             </div>
                             <div class="footer-info-security">
                                 <div class="info-security-email">
-                                    <p>Email:</p>
+                                    <p class="txt-h5">Email:</p>
                                     <p>info@auroratalk.com</p>
                                 </div>
                                 <div class="info-security-hotline">
-                                    <p>Hotline:</p>
+                                    <p class="txt-h5">Hotline:</p>
                                     <p>0955 416 760</p>
                                 </div>
                             </div>
-                            <div class="footer-info-links">
-                                <div class="info-links-youtube">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="info-links-facebook">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="info-links-instagram">
-                                    <img src="" alt="">
-                                </div>
+                        </div>
+                        <div class="aurora-footer-links">
+                            <div class="info-links-youtube info">
+                                <img src="./imgs/links-youtube.png" alt="" class="img-youtube img">
+                            </div>
+                            <div class="info-links-facebook info">
+                                <img src="./imgs/links-facebook.png" alt="" class="img-face-ins img">
+                            </div>
+                            <div class="info-links-instagram info">
+                                <img src="./imgs/links-instagram.png" alt="" class="img-face-ins img">
                             </div>
                         </div>
-                        <div class="aurora-footer-column">
-                            <p>Courses</p>
-                            <p>Speakers</p>
+                        <div class="aurora-footer-select">
+                            <div class="aurora-footer-column">
+                                <p class="footer-column-txt">Courses</p>
+                                <p class="footer-column-txt">Speakers</p>
+                            </div>
+                            <div class="aurora-footer-column two">
+                                <p class="footer-column-txt">My Account</p>
+                                <p class="footer-column-txt">Help & Support</p>
+                            </div>
+                            <div class="aurora-footer-column three">
+                                <p class="footer-column-txt">Terms & Policy</p>
+                                <p class="footer-column-txt">Feedback</p>
+                            </div>
                         </div>
-                        <div class="aurora-footer-column two">
-                            <p>My Account</p>
-                            <p>Help & Support</p>
-                        </div>
-                        <div class="aurora-footer-column three">
-                            <p>Terms & Policy</p>
-                            <p>Feedback</p>
-                        </div>
-                        <div class="aurora-footer-copyright">
-                            <p>COPYRIGHT © 2020 AURORATALK. ALL RIGHTS RESERVED.</p>
-                        </div>
-                        <div class="aurora-footer-language">
-                            <p>English</p>
-                            <p>Tiếng Việt</p>
+                        <div class="aurora-footer-details">
+                            <div class="txt-h5 aurora-footer-copyright">
+                                <p>Copyright © 2020 Auroratalk. All rights reserved.</p>
+                            </div>
+                            <div class="txt-h5 aurora-footer-language">
+                                <p class="footer-language">English</p>
+                                <p class="footer-language">Tiếng Việt</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
