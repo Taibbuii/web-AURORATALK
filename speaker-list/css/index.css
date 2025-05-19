@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  /* 1728px */
+  font-size: 0.0694444444444444vw; /* 1/1440px*100 = 1px at 1440px screen */
+  /* font-size: 1px; */
+}
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 1px;
+  }
+}
+@media screen and (max-width: 991px) {
+  :root {
+    font-size: 0.1009081735620585vw; /* 1/991px*100 = 1px at 991px */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 0.21052631578947371vw;
+  }
+}
+button {
+  border: none;
+  border-radius: 3px;
+}
+.container {
+  width: 100%;
+  max-width: 1306rem;
+  margin-inline: auto;
+  padding-inline: 80rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30rem;
+}
+.main {
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.txt-h1 {
+  font-size: 100rem;
+  line-height: 110%;
+  letter-spacing: -1.8rem;
+  font-weight: 700;
+}
+.txt-h2 {
+  font-size: 70rem;
+  line-height: 110%;
+  font-weight: 700;
+}
+.txt-h3 {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.txt-h4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #757575;
+}
+.txt-h5 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #757575;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* speakerlist menu */
+.speakerlist-menu {
+  background: linear-gradient(to bottom, #000000 0%, #000000 100%);
+  padding-top: 29rem;
+  padding-bottom: 29rem;
+  color: #ffffff;
+}
+.speakerlist-menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.speakerlist-menu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.speakerlist-menu-infor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* speakerlist experts */
+.speakerlist-experts {
+  background-color: #000000;
+  padding-top: 110px;
+}
+.speakerlist-experts-title {
+grid-column: 1/6;
+width: 100%;
+max-width: 460px;
+}
+.speakerlist-experts-categories {
+  grid-column: 7/-1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  column-gap: 20rem;
+  color: #757575;
+  margin-bottom: 13px;
+}
+.categories-item:hover {
+  color: #ff7155;
+}
